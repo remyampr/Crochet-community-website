@@ -1,0 +1,232 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(  rgba(142, 67, 109, 0.779), rgba(183, 98, 176, 0.8)),
+    url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #f5f5f5;
+  font-family: Roboto;
+}
+section {
+  margin-bottom: 100px;
+}
+.navbar .navbar-brand {
+  font-family: Pacifico;
+  color: #f5f5f5;
+  font-size: 30px;
+  transition: 1s ease-in-out;
+}
+.navbar .navbar-brand:hover {
+  text-decoration: underline;
+  scale: 1.02;
+}
+.navbar .navbar-nav .nav-link {
+  font-family: poppins;
+  font-weight: 300;
+  color: #f5f5f5;
+  transition: 1s ease-in-out;
+}
+.navbar .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  scale: 1.02;
+}
+
+/* jumbotron */
+.hero {
+  margin-top: 100px;
+ 
+  width: 100%;
+}
+
+.hero span {
+  font-weight: 600;
+}
+.hero h1 {
+  /* font-weight: 800; */
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.hero p {
+  font-weight: 300;
+  font-size: 18px;
+}
+/* carousel */
+
+.carousel {
+  max-height: 300px;
+}
+.carousel img {
+  object-fit: cover;
+}
+
+/* Events section */
+
+.events .event-card {
+    position: relative;
+  background-color: transparent;
+  color: #f5f5f5;
+  
+
+
+  /* box-shadow: 0px 4px 10px rgba(125, 6, 72, 0.3);
+    box-shadow: 0px 4px 10px rgba(184, 133, 180, 0.5); */
+
+  box-shadow: 0px 4px 10px rgba(125, 6, 72, 0.3),
+    0px 4px 10px rgba(184, 133, 180, 0.5);
+}
+
+.hover-layer{
+    position: absolute;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 90px;
+
+    background-color:rgba(17, 12, 15, 0.7) ;
+    opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth fade-in effect*/
+}
+
+.event-btn:hover ~ .hover-layer{
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    opacity: 1; /* To visible */
+    
+    overflow: hidden;
+
+}
+.event-btn {
+    background-color: #f5f5f5;
+    box-shadow: 0px 6px 10px rgba(125, 6, 72, 0.3),
+    0px 4px 10px rgba(87, 21, 81, 0.5);
+margin-left: 80px;
+color: rgb(83, 6, 77);;
+
+
+}
+
+
+/* about us */
+.about img{
+  border-radius: 25px;
+}
+
+
+/* contact */
+.input-field input,
+.input-field textarea {
+  background-color: transparent;
+  border:1.5px solid #e47fc9;
+  color: #f5f5f7;
+  padding: 12px;
+}
+.input-field textarea {
+  padding: 35px;
+}
+.input-field input::placeholder,
+.input-field textarea::placeholder {
+  color: #f5f5f7;
+  font-weight: 200;
+}
+.input-field input:focus,
+.input-field textarea:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #a83f70;
+  box-shadow: none;
+  color: #f5f5f7;
+  /* backdrop-filter: blur(4px); */
+}
+.contact-container .btn {
+  background-image: linear-gradient(to right, #693655, #863f79);
+  width:50%;
+  color: #f5f5f5;
+  padding: 10px;
+  transition: 0.3s ease-in;
+}
+.contact-container .btn:hover {
+  box-shadow: 0 4px 10px rgba(102, 8, 96, 0.5),
+    0 4px 15px rgba(181, 84, 163, 0.4);
+  scale: 1.05;
+}
+
+  .modal h5{
+    color: #863f79;
+  }
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+  background: linear-gradient(0, 0, 0, 0, 4);
+  backdrop-filter: blur(8px);
+}
+
+footer i {
+  color: #f5f5f5;
+  font-size: 24 px;
+  cursor: pointer;
+}
+footer i:hover {
+  color:#8b1f51;
+}
+.fa{
+  font-size: 20px;
+  /* social icon size */
+}
+footer p {
+  font-size: 14px;
+}
+.copy-wright {
+  font-size: 12px;
+}
+.quick-links h3 {
+  text-decoration: underline;
+}
+quick-links .navbar-nav .nav-item .nav-link {
+  font-size: 8px;
+}
+.quick-links .navbar-nav .nav-item .nav-link:hover {
+  color:#a83f70;
+  scale: 1.02;
+}
+.news-letter input {
+  background-color: transparent;
+  border:1.5px solid #e47fc9;
+}
+.news-letter input::placeholder {
+  color: #f5f5f7;
+  font-weight: 200;
+}
+.news-letter input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #a83f70;
+  box-shadow: none;
+  color: #f5f5f7;
+}
+.news-letter .btn {
+  background-image: linear-gradient(to right, #693655, #863f79);
+  width:50%;
+  color: #f5f5f5;
+  padding: 10px;
+  transition: 0.3s ease-in;
+}
+.news-letter .btn:hover {
+  box-shadow: 0 4px 10px rgba(102, 8, 96, 0.4),
+  0 1px 3px rgba(181, 84, 163, 0.3);
+scale: 1.01;
+}
